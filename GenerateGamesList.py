@@ -59,7 +59,7 @@ def create_script(game_title):
     Creates the script to run a game title
     :param game_title: The name of the game to launch
     """
-    return '{}{}\"{}\"'.format(BashHeader, StreamString, game_title.replace(":", ""))
+    return '{}{}\"{}\"'.format(BashHeader, StreamString, game_title)
 
 
 def write_script(script, game_title):
