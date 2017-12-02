@@ -1,0 +1,16 @@
+Searching for server...
+Connect to 172.16.1.76...
+1. Steam
+2. steamcmd (buildbot_steam-relclient-win32-builder_steam_rel_client_win32@steam-relclient-win32-builder)
+3. Rise of The Tomb Raider
+4. XCOM: Enemy Unknown
+5. Stardew Valley
+6. Overwatch
+7. Titanfall 2
+8. PlayerUnknown's Battle Grounds
+9. Metal Gear Solid V: The Phantom Pain
+10. PlayerUnknown's Battle Grounds
+11. The Witcher 2: Assassins of Kings
+12. Hearthstone: Heroes of Warcraft
+13. INSIDE
+14. Rocket League
