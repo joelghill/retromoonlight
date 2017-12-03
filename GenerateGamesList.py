@@ -91,7 +91,7 @@ except Exception as e:
     exit(e)
 
 
-clear_directory(os.getcwd())
+clear_directory(roms_directory)
 
 for gameListing in RawInputList:
     parsedListing = gameListing.strip()
