@@ -17,10 +17,11 @@ Follow this guide: [https://github.com/TechWizTime/moonlight-retropie](https://g
 Then, on your raspberry pi:
 
   1. git clone https://github.com/joelghill/retromoonlight.git
-  
   2. cd retromoonlight
-  
   3. sudo bash ./Install.sh
+  4. emulationstation
+  
+Once EmulationStation is running, navigate to the Steam console, select the "Refresh" rom, then reboot emultationstation after the script is finished.
 
 ## Usage ##
 Emulationstation should now have an entry for Steam (should maybe rename). There will be a single "Rom" called refresh. Use this to update your games list. After using refresh command you will need to reboot emulationstation.
