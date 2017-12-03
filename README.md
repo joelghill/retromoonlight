@@ -25,5 +25,9 @@ Then, on your raspberry pi:
 ## Usage ##
 Emulationstation should now have an entry for Steam (should maybe rename). There will be a single "Rom" called refresh. Use this to update your games list. After using refresh command you will need to reboot emulationstation.
 
+## Credits ##
+
+A huge thank you to [TechWizTime](https://github.com/TechWizTime) for his work in creating the install and setup script for moonlight in RetroPie. I am building on his work and could not have developed this without following his example!
+
 
 
