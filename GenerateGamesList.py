@@ -9,7 +9,7 @@ RefreshListScript = 'Refresh.sh'
 
 BashHeader = '#!/bin/bash\n'
 StreamString = 'moonlight stream -720 -fps 30 -app '
-roms_directory = '~/RetroPie/roms/moonlight/'
+roms_directory = '/home/pi/RetroPie/roms/moonlight/'
 
 
 def clear_directory(folder_path):

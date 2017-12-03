@@ -1,9 +1,13 @@
 #!/bin/bash
 
-if [ ! -d /home/pi/RetroPie/roms/moonlight ] 
+if [ -d /home/pi/RetroPie/roms/moonlight ] 
 then
-    mkdir -p /home/pi/RetroPie/roms/moonlight
+    rm -rf /home/pi/RetroPie/roms/moonlight
 fi
+
+mkdir -p /home/pi/RetroPie/roms/moonlight
+chmod 775 /home/pi/RetroPie/roms/moonlight
+chown pi:pi /home/pi/RetroPie/roms/moonlight
 
 chmod -x+ Refresh.sh
 
