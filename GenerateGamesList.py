@@ -9,6 +9,7 @@ RefreshListScript = 'Refresh.sh'
 
 BashHeader = '#!/bin/bash\n'
 StreamString = 'moonlight stream -720 -fps 30 -app '
+roms_directory = '~/RetroPie/roms/moonlight/'
 
 
 def clear_directory(folder_path):
@@ -71,13 +72,17 @@ def write_script(script, game_title):
     :param script: The string to be written as the script
     :param game_title: The game title to be used as the file name
     """
-    script_name = '{}.sh'.format(game_title).replace(":", "")
-    f = open(script_name, "w+")
-    f.write(script)
-    f.close()
+    try:
+        script_name = '{}{}.sh'.format(roms_directory, game_title.replace(":", ""))
+        print('Writing {} to disk...'.format(script_name))
+        f = open(script_name, "w+")
+        f.write(script)
+        f.close()
 
-    st = os.stat(script_name)
-    os.chmod(script_name, st.st_mode | stat.S_IEXEC)
+        st = os.stat(script_name)
+        os.chmod(script_name, st.st_mode | stat.S_IEXEC)
+    except Exception as write_exception:
+        print(write_exception)
 
 
 try:
