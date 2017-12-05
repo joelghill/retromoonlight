@@ -12,9 +12,7 @@ There is already a [solution available](https://github.com/TechWizTime/moonlight
 
 ## Setup ##
 
-Follow this guide: [https://github.com/TechWizTime/moonlight-retropie](https://github.com/TechWizTime/moonlight-retropie)
-
-Then, on your raspberry pi:
+On your raspberry pi:
 
   1. git clone https://github.com/joelghill/retromoonlight.git
   2. cd retromoonlight
@@ -24,7 +22,19 @@ Then, on your raspberry pi:
 Once EmulationStation is running, navigate to the Steam console, select the "Refresh" rom, then reboot emultationstation after the script is finished.
 
 ## Usage ##
-Emulationstation should now have an entry for Steam (should maybe rename). There will be a single "Rom" called refresh. Use this to update your games list. After using refresh command you will need to reboot emulationstation.
+Emulationstation should now have an entry for Moonlight. There will be a single "Rom" called refresh. Use this to update your games list. After using refresh command you will need to reboot emulationstation.
+
+## Themes ##
+
+I am gradually adding support for custom themes. The current version of retro moonlight works in:
+
+  * Carbon
+  * Simple
+  * Simple-Dark
+  * Clean-look
+  
+  ![alt text](https://github.com/joelghill/retromoonlight/blob/master/Images/menu_simple-dark_theme.PNG "Moonlight theme")
+  
 
 ## Credits ##
 
