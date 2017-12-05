@@ -5,7 +5,7 @@
 	<view name="system">
 
 		<image name="background" extra="true">
-			<path>./art/moonlight_art_blur.jpg</path>
+			<path>./art/moonlight_art_blur.png</path>
 		</image>
 
 		<image name="logo">
@@ -21,7 +21,7 @@
 
 	<view name="basic, detailed">
 	
-		<text name="system_name_1" extra="true">
+		<text name="MoonLight" extra="true">
 			<text>Super Nintendo</text>
 			<forceUppercase>1</forceUppercase>
 			<size>0.45 0.08</size>
@@ -32,7 +32,7 @@
 			<alignment>right</alignment>
 		</text>
 		
-		<text name="system_name_2" extra="true">
+		<text name="Game Streaming" extra="true">
 			<text>Entertainment System</text>
 			<forceUppercase>1</forceUppercase>
 			<size>0.45 0.08</size>
