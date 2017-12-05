@@ -4,11 +4,11 @@ echo -e "\n****************************************************************"
 echo -e "Welcome to the Moonlight Installer Script for RetroPie v1.0.0.0"
 echo -e "****************************************************************\n"
 echo -e "Select an option:"
-echo -e " * 1: Install Moonlight,Pair,Install Scripts,Install Menus"
+echo -e " * 1: Install Moonlight, Pair, Install Scripts"
 echo -e " * 2: Install Moonlight themes"
 echo -e " * 3: Remove Launch Scripts"
 echo -e " * 4: Re Pair Moonlight with PC"
-echo -e " * 5: Update This Script"
+echo -e " * 5: Exit"
 
 
 read NUM
@@ -112,7 +112,7 @@ case $NUM in
 		
 		sudo bash ./Install.sh
 	;;
-    
+
 	3)
 		echo -e "\nRemove All Moonlight Launch Scripts"
 		echo -e "***********************************\n"
