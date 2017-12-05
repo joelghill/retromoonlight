@@ -13,8 +13,8 @@
         </image>
 		
 		<helpsystem name="help">
-			<textColor>ffffff88</textColor>
-			<iconColor>ffffff88</iconColor>
+			<textColor>00000088</textColor>
+			<iconColor>00000088</iconColor>
 		</helpsystem>
 		
 	</view>
@@ -24,8 +24,19 @@
 		<text name="system_name_1" extra="true">
 			<text>Moonlight</text>
 			<forceUppercase>1</forceUppercase>
-			<size>0.45 0.16</size>
-			<pos>0.527 0</pos>
+			<size>0.45 0.08</size>
+			<pos>0.527 0.01</pos>
+			<color>7b7d7f</color>
+			<fontPath>./../art/OPENSANS-LIGHT.TTF</fontPath>
+			<fontSize>0.055</fontSize>
+			<alignment>right</alignment>
+		</text>
+		
+		<text name="system_name_2" extra="true">
+			<text>Streaming</text>
+			<forceUppercase>1</forceUppercase>
+			<size>0.45 0.08</size>
+			<pos>0.527 0.07</pos>
 			<color>7b7d7f</color>
 			<fontPath>./../art/OPENSANS-LIGHT.TTF</fontPath>
 			<fontSize>0.055</fontSize>
@@ -35,7 +46,7 @@
 		<image name="logo">
 			<path>./art/moonlight.svg</path>
 			<pos>0.025 0.079</pos>
-			<maxSize>0.47 0.1</maxSize>
+			<maxSize>0.45 0.1</maxSize>
 			<origin>0 0.5</origin>
 		</image>
 
@@ -54,100 +65,103 @@
 
 	<view name="detailed">
 	
-<!-- measuring rectangle
+<!-- <measuring rectangle 
 		<image name="measure" extra="true">
-			<pos>0.6 0.05</pos>
+			<pos>0.025 0.6</pos>
 			<origin>0 0</origin>
-			<size>0.24 0.61</size>
+			<size>0.125 0.301</size>
 			<path>./../art/white.png</path>
 			<color>ff00ff</color>
 		</image> 
 -->
 
 		<image name="md_image">
-			<pos>0.05 0.22</pos>
-<!-- 			<size>0.24 0.501</size>
- -->			<maxSize>0.445 0.601</maxSize>
+			<pos>0.025 0.22</pos>
+<!-- 			<size>0.125 0.301</size>
+ -->			<maxSize>0.125 0.301</maxSize>
 			<origin>0 0</origin>
 		</image>
 		
 		<text name="md_lbl_rating">
-			<pos>2 2</pos>
+			<pos>0.177 0.21</pos>
 		</text>
 		
 		<text name="md_lbl_releasedate">
-			<pos>2 2</pos>
+			<pos>0.177 0.25</pos>
 		</text>
 		
 		<text name="md_lbl_developer">
-			<pos>2 2</pos>
+			<pos>0.177 0.29</pos>
 			<size>0.133 0.04</size>
 		</text>
 
 		<text name="md_lbl_publisher">
-			<pos>2 2</pos>
+			<pos>0.177 0.33</pos>
 			<size>0.133 0.04</size>
 		</text>
 		
 		<text name="md_lbl_genre">
-			<pos>2 2</pos>
+			<pos>0.177 0.37</pos>
 		</text>
 		
 		<text name="md_lbl_players">
-			<pos>2 2</pos>
+			<pos>0.177 0.41</pos>
 		</text>
 
 		<text name="md_lbl_lastplayed">
-			<pos>2 2</pos>
+			<pos>0.177 0.45</pos>
 		</text>
 
 		<text name="md_lbl_playcount">
-			<pos>2 2</pos>
+			<pos>0.177 0.49</pos>
 		</text>
 		
 		<text name="md_playcount">
-			<pos>2 2</pos>
+			<pos>0.31 0.49</pos>
 		</text>
 
 		<datetime name="md_lastplayed">
-			<pos>2 2</pos>
+			<pos>0.31 0.45</pos>
 		</datetime>
 		
 		<text name="md_players">
-			<pos>2 2</pos>
+			<pos>0.31 0.41</pos>
 		</text>
 		
 		<text name="md_genre">
-			<pos>2 2</pos>
+			<pos>0.31 0.37</pos>
+			<size>0.24 0.04</size>
 		</text>
 
 		<text name="md_publisher">
-			<pos>2 2</pos>
+			<pos>0.31 0.33</pos>
+			<size>0.24 0.04</size>
 		</text>
 		
 		<text name="md_developer">
-			<pos>2 2</pos>
+			<pos>0.31 0.29</pos>
+			<size>0.24 0.04</size>
 		</text>
 		
 		<datetime name="md_releasedate">
-			<pos>2 2</pos>
+			<pos>0.31 0.25</pos>
 		</datetime>
 		
 		<rating name="md_rating">
-			<pos>2 2</pos>
+			<pos>0.31 0.216</pos>
 			<size>0.028 0.028</size>
 			<filledPath>./../art/star_filled_spacing.svg</filledPath>
 			<unfilledPath>./../art/star_hollow_3_spacing.svg</unfilledPath>
 		</rating>
 		
 		<text name="md_description">
-			<size>0.3 0.3</size>
-			<pos>2 2</pos>
+			<size>0.52 0.3</size>
+			<pos>0.025 0.577</pos>
 		</text>
 		
 		<textlist name="gamelist">
-			<pos>0.555 0.22</pos>
-			<size>0.450 0.68</size>
+			<pos>0.615 0.22</pos>
+			<size>0.359 0.68</size>
 			<alignment>left</alignment>
 			<horizontalMargin>0.01</horizontalMargin>
 		</textlist>
