@@ -1,0 +1,245 @@
+<!-- 
+Theme: Minimal
+version: 1.0
+author: Lilbud
+license: creative commons CC-BY-NC-SA
+-->
+<theme>
+    <formatVersion>4</formatVersion>
+
+	<view name="system">
+
+		<image name="background" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./../assets/bg.png</path>
+			<zIndex>0</zIndex>
+			<color>10667f</color>
+		</image>
+		
+		<!--<image name="filter" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./../assets/system_overlay.png</path>
+			<zIndex>1</zIndex>
+		</image>-->
+
+		<helpsystem name="help">
+			<textColor>00000000</textColor>
+			<iconColor>00000000</iconColor>
+			<pos>1 1</pos>
+		</helpsystem>
+		
+	  <image name="logo">
+         <path>./../art/${system.theme}.svg</path>
+      </image>
+		
+	</view>
+
+	<view name="basic">
+
+		<textlist name="gamelist">
+			<selectorColor>ffffff</selectorColor>
+			<selectedColor>000000</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>ffffff</secondaryColor>
+			<fontPath>./../assets/SST.ttf</fontPath>
+			<fontSize>0.035</fontSize>
+			<pos>0.160 0.124</pos>
+			<size>0.684 0.725</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<origin>0 0</origin>
+		</textlist>
+
+	</view>
+	
+	<view name="basic, video, detailed">
+	
+		<image name="logo">
+			<pos>1 1</pos>
+			<color>00000000</color>
+			<path>./../assets/box.png</path>
+		</image>
+		
+		<!--<image name="filter" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./../assets/system_overlay.png</path>
+			<zIndex>1</zIndex>
+		</image>-->
+		
+		<image name="background">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./../assets/bg.png</path>
+			<zIndex>0</zIndex>
+			<color>10667f</color>
+		</image>
+		
+		<rating name="md_rating">
+			<pos>0.22 0.617</pos>
+			<size>0.08 0.02</size>
+			<filledPath>./../assets/rating_filled.svg</filledPath>
+			<unfilledPath>./../assets/rating_unfilled.svg</unfilledPath>
+			<zIndex>40</zIndex>
+		</rating>
+		
+		<text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate">
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="system_name" extra="true">
+			<text>${system.fullName}</text>
+			<forceUppercase>0</forceUppercase>
+			<size>0.5 0.025</size>
+			<pos>0.02 0.037</pos>
+			<color>ffffff</color>
+			<fontPath>./../assets/SST.ttf</fontPath>
+			<fontSize>0.04</fontSize>
+			<zIndex>2</zIndex>
+		</text>
+		
+	</view>	
+	
+	<view name="detailed, video">
+
+		<datetime name="md_releasedate">
+				<pos>.160 .548</pos>
+				<size>0.5 0.16</size>
+				<color>ffffff</color>
+				<fontSize>0.017</fontSize>
+				<fontPath>./../assets/SST.ttf</fontPath>
+		</datetime>
+		
+		<text name="md_developer">
+				<pos>.22 .58</pos>
+				<size>0.5 0.16</size>
+				<color>ffffff</color>
+		</text>
+		
+		<text name="md_players">
+				<pos>.2 .58</pos>
+				<size>0.5 0.16</size>
+		</text>
+		
+		<text name="md_lbl_players">
+				<pos>.160 .58</pos>
+				<size>0.5 0.16</size>
+		</text>
+		
+		<text name="md_description">
+			<pos>0.16 0.693</pos>
+			<size>0.272 0.177</size>
+			<color>ffffff</color>
+		</text>
+		
+		<rating name="md_rating">
+			<pos>0.22 0.617</pos>
+			<size>0.08 0.02</size>
+			<filledPath>./../assets/rating_filled.svg</filledPath>
+			<unfilledPath>./../assets/rating_unfilled.svg</unfilledPath>
+			<zIndex>40</zIndex>
+		</rating>
+		
+		<text name="md_developer, md_players, md_description, md_lbl_players, md_players, system_name">
+			<fontSize>0.017</fontSize>
+			<fontPath>./../assets/SST.ttf</fontPath>
+			<color>ffffff</color>
+			<forceUppercase>0</forceUppercase>
+			<zIndex>2</zIndex>
+		</text>
+		
+		<text name="system_name" extra="true">
+			<text>${system.fullName}</text>
+			<size>0.5 0.025</size>
+			<pos>0.02 0.037</pos>
+			<fontSize>0.04</fontSize>
+		</text>
+
+	</view>
+		
+	<view name="detailed">
+		
+		<textlist name="gamelist">
+			<selectorColor>ffffff</selectorColor>
+			<selectedColor>000000</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>ffffff</secondaryColor>
+			<fontPath>./../assets/SST.ttf</fontPath>
+			<fontSize>0.035</fontSize>
+			<pos>0.45 0.124</pos>
+			<size>0.39 0.725</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<origin>0 0</origin>
+		</textlist>
+		
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.2965 0.3595</pos>
+			<maxSize>0.273 0.471</maxSize>
+		</image>
+	
+	</view>
+	
+	<view name="video">
+
+			<video name="md_video">
+				<origin>0.5 0.5</origin>
+				<pos>0.2965 0.3595</pos>
+				<maxSize>0.273 0.471</maxSize>		
+				<delay>0</delay>
+				<default></default>
+				<showSnapshotNoVideo>true</showSnapshotNoVideo>
+				<showSnapshotDelay>false</showSnapshotDelay>
+			</video>
+
+			<image name="md_marquee">
+				<pos>0.45 0.626</pos>
+				<origin>0 0</origin>
+				<maxSize>0.39 0.23</maxSize>
+			</image>
+			
+		<textlist name="gamelist">
+			<selectorColor>ffffff</selectorColor>
+			<selectedColor>000000</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>ffffff</secondaryColor>
+			<fontPath>./../assets/SST.ttf</fontPath>
+			<fontSize>0.035</fontSize>
+			<pos>0.45 0.124</pos>
+			<size>0.39 0.471</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<origin>0 0</origin>
+		</textlist>
+
+	</view>
+	
+	<feature supported="carousel">
+      
+	  <view name="system">
+         
+		<carousel name="systemcarousel">
+		    <type>horizontal</type>
+		    <color>00000000</color>
+		    <logoScale>1</logoScale>
+		    <logoSize>0.25 0.155</logoSize>
+         </carousel>
+		    
+		<text name="systemInfo">
+		    <backgroundColor>00000000</backgroundColor>
+		    <color>ffffff</color>
+		    <fontPath>./../assets/SST.ttf</fontPath>
+		    <fontSize>0.03</fontSize>     
+		</text>
+	  </view>
+	
+	</feature>
+
+</theme>

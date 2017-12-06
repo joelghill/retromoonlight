@@ -1,0 +1,11 @@
+Guide for changing elements of the Minimal Theme
+
+---changing background---
+
+Move your desired image to the 'assets' directory and rename it to 'bg.png' replace the existing image. 
+I have included a few backgrounds in the _extra folder, just move and rename. 
+
+
+---splashscreens---
+
+There are two splashscreens included in the _extra folder

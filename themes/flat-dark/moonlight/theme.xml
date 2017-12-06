@@ -1,0 +1,43 @@
+<theme>
+    <formatVersion>4</formatVersion>
+	<include>./../flat.xml</include>
+
+	<view name="system">
+
+		<image name="background" extra="true">
+			<color>1f70c1</color>
+		</image>
+
+		<image name="logo">
+			<path>./system.svg</path>
+		</image>
+
+	</view>
+
+	<view name="basic, detailed, video">
+	
+		<image name="logo">
+			<path>./../assets/IBM.png</path>
+		</image>
+		
+		<textlist name="gamelist">
+			<selectorColor>1f70c1</selectorColor>
+		</textlist>	
+		
+		<text name="system_name_1" extra="true">
+			<text>Moonlight</text>
+			<forceUppercase>1</forceUppercase>
+			<size>0.743 0.085</size>
+			<pos>0.192 0.019</pos>
+			<color>c9c9c9</color>
+			<fontPath>./../assets/OPENSANS-LIGHT.TTF</fontPath>
+			<fontSize>0.077</fontSize>
+			<alignment>left</alignment>
+		</text>
+	
+	</view>
+	
+	<view name="detailed">
+	</view>
+
+</theme>

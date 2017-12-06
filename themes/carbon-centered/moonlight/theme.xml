@@ -1,0 +1,30 @@
+<theme>
+    <formatVersion>3</formatVersion>
+    <include>./../carbon.xml</include>
+
+	<view name="system">
+		<image name="logo">
+			<path>./art/system.svg</path>
+		</image>
+		
+		<image name="overlay" extra="true">
+			<tile>false</tile>
+			<pos>0.5 0.2</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.3 0</size>
+			<path>./art/controller.svg</path>
+			<color>8b0000</color>
+		</image>
+		
+	</view>
+
+	<view name="basic, detailed">
+		<image name="logo">
+			<path>./art/system.svg</path>
+			<pos>.5 0.0775</pos>
+			<maxSize>0.5 0.1</maxSize>
+			<origin>.5 .5</origin>
+		</image>
+	</view>
+
+</theme>
