@@ -1,6 +1,6 @@
 # RetroPie Moonlight #
 
-This is a set of scripts with the intent of helping people stream games from their PC to their RetroPie. These scripts use [Moonligh](http://moonlight-stream.com/) to query your PC for your available games and generates a "Console" within RetroPi along with a set of "Roms" representing your games. Each rom is actually a shell script configured to tell moonlight to begin streaming the game of your choice.
+This is a set of scripts with the intent of helping people stream games from their PC to their RetroPie. These scripts use [Moonlight](http://moonlight-stream.com/) to query your PC for your available games and generates a "Console" within RetroPi along with a set of "Roms" representing your games. Each rom is actually a shell script configured to tell moonlight to begin streaming the game of your choice.
 ![alt text](https://github.com/joelghill/retromoonlight/blob/master/Images/menu_eudora.png "Moonlight game collection in Eudora theme")
 
 ## Why Use This? ##
@@ -28,10 +28,14 @@ Emulationstation should now have an entry for Moonlight. There will be a single 
 
 I am gradually adding support for custom themes. The current version of retro moonlight works in:
 
-  * Carbon
+  * Carbon (several variants)
   * Simple
   * Simple-Dark
   * Clean-look
+  * minimal
+  * Eudora-Updated
+  * flat
+  * flat-dark
   
   ![alt text](https://github.com/joelghill/retromoonlight/blob/master/Images/menu_simple-dark_theme.PNG "Moonlight theme")
   
