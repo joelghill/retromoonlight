@@ -1,15 +1,28 @@
 #!/bin/bash
 
-if [ -d /home/pi/RetroPie/roms/moonlight ] 
-then
-    rm -rf /home/pi/RetroPie/roms/moonlight
+echo -e "\nAdding Moonlight to Sources List..."
+		
+if grep -q "deb http://archive.itimmer.nl/raspbian/moonlight jessie main" /etc/apt/sources.list; then
+    echo -e "NOTE: Moonlight Source Exists - Skipping"
+else
+    echo -e "Adding Moonlight to Sources List"
+    echo "deb http://archive.itimmer.nl/raspbian/moonlight jessie main" >> /etc/apt/sources.list
 fi
 
-mkdir -p /home/pi/RetroPie/roms/moonlight
-chmod 775 /home/pi/RetroPie/roms/moonlight
-chown pi:pi /home/pi/RetroPie/roms/moonlight
+echo -e "\nFetching and installing the GPG key....\n"
 
-chmod -x+ Refresh.sh
+if [ -f /home/pi/itimmer.gpg ]
+then	
+    echo -e "NOTE: GPG Key Exists - Skipping"
+else		
+    wget http://archive.itimmer.nl/itimmer.gpg
+    chown pi:pi /home/pi/itimmer.gpg
+    apt-key add itimmer.gpg		
+fi
 
-/bin/cp ./Refresh.sh /home/pi/RetroPie/roms/moonlight/Refresh.sh
-/bin/cp ./GenerateGamesList.py /home/pi/RetroPie/roms/moonlight/GenerateGamesList.py
+echo -e "\nUpdating System..."
+apt-get update -y
+
+echo -e "\nInstalling Moonlight..."
+apt-get install moonlight-embedded -y
+echo -e "\nMoonlight Installed!"
