@@ -14,15 +14,15 @@ echo -e " * 7: Remove Launch Scripts"
 echo -e " * 8: Exit"
 
 read NUM
-case $NUM in
-	1)
-		sudo bash ./Install_moonlight.sh
-		sudo bash ./Pair_moonlight.sh
-		sudo bash ./Install_moonlight_menu.sh
-		sudo bash ./Install_Scripts.sh
-		sudo bash ./Install_themes.sh
-	;;
-	2)
+case $NUM in 
+1)
+sudo bash ./Install_moonlight.sh
+sudo bash ./Pair_moonlight.sh
+sudo bash ./Install_moonlight_menu.sh
+sudo bash ./Install_Scripts.sh
+sudo bash ./Install_themes.sh	
+;;
+2)
 		sudo bash ./Install_moonlight.sh
 		sudo bash ./Install.sh
 	;;
