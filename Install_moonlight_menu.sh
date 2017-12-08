@@ -13,13 +13,8 @@ fi
 
 echo -e "Copying Systems Config File"
 cp /etc/emulationstation/es_systems.cfg $DIRECTORY
-    
-if grep -q  "$CONFIG" $DIRECTORY; then
-    echo -e "NOTE: Moonlight Entry Exists - Skipping"
-else
-    echo -e "Adding Steam to Systems"
-    sed
-    sudo sed -i -e 's|</systemList>| /r ./menu_config.txt' $DIRECTORY
-fi
 
-echo -e "\nMoonlight menue added to RetroPie..."
+echo -e "Adding Moonlight to Systems"
+sudo sed -i -e 's|</systemList>|  <system>\n    <name>steam</name>\n    <fullname>Steam</fullname>\n    <path>~/RetroPie/roms/moonlight</path>\n    <extension>.sh .SH</extension>\n    <command>bash %ROM%</command>\n    <platform>pc</platform>\n    <theme>moonlight</theme>\n  </system>\n</systemList>|g' $DIRECTORY
+
+echo -e "\nMoonlight menu added to RetroPie..."
