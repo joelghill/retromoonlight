@@ -44,7 +44,9 @@ sudo bash ./Install_themes.sh
 	;;
 	7)
 		echo -e "\nRemoving all Moonlight launch scripts..."
-		rm -rf /home/pi/RetroPie/roms/moonlight	
+		sudo rm -rf /home/pi/RetroPie/roms/moonlight	
+		sudo rm /home/pi/RetroPie/retropiemenu/Refresh.sh
+		sudo rm /home/pi/RetroPie/retropiemenu/GenerateGamesList.py
 		sudo bash ./Install.sh
 	;;
 	8)

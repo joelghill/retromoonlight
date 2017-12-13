@@ -13,8 +13,8 @@ chown pi:pi /home/pi/RetroPie/roms/moonlight
 
 chmod -x+ Refresh.sh
 
-/bin/cp ./Refresh.sh /home/pi/RetroPie/roms/moonlight/Refresh.sh
-/bin/cp ./GenerateGamesList.py /home/pi/RetroPie/roms/moonlight/GenerateGamesList.py
+/bin/cp ./Refresh.sh /home/pi/RetroPie/retropiemenu/Refresh.sh
+/bin/cp ./GenerateGamesList.py /home/pi/RetroPie/retropiemenu/GenerateGamesList.py
 
 echo -e "Refresh script has been added to RetroPie\n"
 echo -e "After loading RetroPie, use the \"Refresh\" rom listed in the Moonlight system.\n"
