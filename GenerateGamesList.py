@@ -20,10 +20,8 @@ def clear_directory(folder_path):
     for the_file in os.listdir(folder_path):
         try:
             file_path = os.path.join(folder_path, the_file)
-            if os.path.isfile(file_path) \
-                and the_file != RefreshListScript \
-                and not the_file.endswith(('.txt', 'py')):
-                    os.unlink(file_path)
+            if os.path.isfile(file_path):
+                os.unlink(file_path)
         except Exception as e:
             print(e)
 
