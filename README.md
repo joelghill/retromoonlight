@@ -9,7 +9,7 @@ There is already a [solution available](https://github.com/TechWizTime/moonlight
   2. I've found Steam BPM to be unreliable when used with RetroPie and I wanted something better.
   
 ## Minimum Requirements ##
-
+  * Raspberry Pi running Raspian Stretch (or latest RetroPie release)
   * GPU: Desktop: GeForce GTX 650 or higher desktop GPU.
   * CPU: Intel Core i3-2100 3.1GHz or AMD Athlon II X4 630 2.8 GHz or higher.
   * System Memory: 4 GB or higher.
