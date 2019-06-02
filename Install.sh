@@ -15,40 +15,40 @@ echo -e " * 8: Exit"
 
 read NUM
 case $NUM in 
-1)
-sudo bash ./Install_moonlight.sh
-sudo bash ./Pair_moonlight.sh
-sudo bash ./Install_moonlight_menu.sh
-sudo bash ./Install_Scripts.sh
-sudo bash ./Install_themes.sh	
-;;
-2)
-		sudo bash ./Install_moonlight.sh
-		sudo bash ./Install.sh
-	;;
-	3)				
-		sudo bash ./Pair_moonlight.sh
-		sudo bash ./Install.sh
-	;;
-	4)
-		sudo bash ./Install_moonlight_menu.sh
-		sudo bash ./Install.sh
-	;;	
-	5) 
-		sudo bash ./Install_Scripts.sh
-		sudo bash ./Install.sh
-	;;
+    1)
+        sudo bash ./Scripts/Install_moonlight.sh
+        sudo bash ./Scripts/Pair_moonlight.sh
+        sudo bash ./Scripts/Install_moonlight_menu.sh
+        sudo bash ./Scripts/Install_Scripts.sh
+        sudo bash ./Scripts/Install_themes.sh	
+        ;;
+    2)
+        sudo bash ./Scripts/Install_moonlight.sh
+        sudo bash ./Install.sh
+        ;;
+    3)				
+        sudo bash ./Scripts/Pair_moonlight.sh
+        sudo bash ./Install.sh
+        ;;
+    4)
+        sudo bash ./Scripts/Install_moonlight_menu.sh
+        sudo bash ./Install.sh
+        ;;	
+    5) 
+        sudo bash ./Scripts/Install_Scripts.sh
+        sudo bash ./Install.sh
+        ;;
     6)  
-		sudo bash ./Install_themes.sh
-		sudo bash ./Install.sh
-	;;
-	7)
-		echo -e "\nRemoving all Moonlight launch scripts..."
-		rm -rf /home/pi/RetroPie/roms/moonlight	
-		sudo bash ./Install.sh
-	;;
-	8)
-	 	exit 1
-	;;		
-	*) echo "INVALID NUMBER!" ;;
+        sudo bash ./Scripts/Install_themes.sh
+        sudo bash ./Install.sh
+        ;;
+    7)
+        echo -e "\nRemoving all Moonlight launch scripts..."
+        rm -rf /home/pi/RetroPie/roms/moonlight	
+        sudo bash ./Install.sh
+        ;;
+    8)
+        exit 1
+        ;;		
+    *) echo "INVALID NUMBER!" ;;
 esac
